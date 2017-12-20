@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<button class="btn1" bindtap="backTo">
+返回主页面</button> 
+
+<view >沙河校区超市情况</view>
+<view >人流情况：</view>
+<view >{{app.globalData.degree}}</view>
+<view wx:if="{{judge==2}}"> 十分拥挤 </view>
+<view wx:elif="{{judge==1}}"> 人流正常 </view>
+<view wx:else> 没有多少人</view>
+<view >------------</view>
+<view >超市内温度：</view>
+<view> {{temperature}}℃ </view>
+<view >------------</view>
+<view >超市内湿度：</view>
+<view> {{ humidity}}%RH </view>
+<view >------------</view>
+<view >温差：</view>
+<view> {{temperature_con}}℃ </view>
+<view wx:if="{{temperature_con>15}}"> 内外温差很大！请注意！ </view>
+<view wx:elif="{{temperature_con>8}}"> 内外温差较大！ </view>

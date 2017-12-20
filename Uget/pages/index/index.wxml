@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<button class="btn1" bindtap="getDataFromOneNet">
+初始化或更新云端信息</button> <!-- 按钮：发送请求-->
+<button class="btn1" bindtap="dealwithdata">
+获得超市人流信息</button> <!--  按钮：发送请求-->
+<image  style="width:380px;height:400px;"src="xiaoyuan.png"></image><!--  载入图片-->
+<canvas canvas-id="myCanvas" bindtap="jumpTo" style="width:380px;height:30px;"/>
+<view>红色代表人流较多，黄色代表人流正常，绿色代表人流稀少。
+点击色块可获得更详细内容
+</view>
